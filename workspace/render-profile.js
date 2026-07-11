@@ -108,13 +108,10 @@ function renderProjects() {
   projects.forEach((project) => {
     const entry = document.createElement("li");
     const name = document.createElement("strong");
-    const stack = document.createElement("span");
 
     name.textContent = project.name;
-    stack.className = "project-stack";
-    stack.textContent = ` (${project.stack})`;
 
-    entry.append(name, stack, text(`: ${project.summary}`));
+    entry.append(name, text(`: ${project.summary}`));
     list.append(entry);
   });
 }
