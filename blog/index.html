@@ -1,19 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog | Geng Haijian</title>
+    <meta
+      name="description"
+      content="耿海剑的博客，记录学习、网站开发、SEO 与 AI 工具。"
+    />
+    <title>耿海剑的博客</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../styles.css" />
+    <script type="module" src="../workspace/render-blog.js"></script>
   </head>
   <body>
-    <main class="page-shell">
-      <section>
-        <h1>Blog</h1>
-        <p>none</p>
-        <p class="return-link"><a href="../">Home</a></p>
-      </section>
-    </main>
+    <div class="archive-shell archive-shell--blog">
+      <header class="archive-header">
+        <h1><a href="./" data-archive-title></a></h1>
+        <p class="archive-description" data-archive-description></p>
+        <nav class="archive-nav" aria-label="博客导航" data-archive-nav></nav>
+      </header>
+
+      <main class="archive-layout archive-layout--single">
+        <section class="archive-feed" aria-label="文章列表" data-archive-feed></section>
+      </main>
+
+      <footer class="archive-footer" data-archive-footer></footer>
+    </div>
   </body>
 </html>
