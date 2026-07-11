@@ -10,102 +10,52 @@
     <title>Geng Haijian</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./workspace/render-profile.js"></script>
   </head>
   <body>
     <main class="page-shell">
       <header class="masthead">
         <img
           class="portrait"
-          src="./assets/genghaijian1.png"
-          alt="Geng Haijian"
+          data-profile-portrait
+          src=""
+          alt=""
         />
 
         <div class="intro">
-          <h1>Geng Haijian <span lang="zh-Hans">耿海剑</span></h1>
-          <p class="tagline">
-            Ex SEO / Website developer
-          </p>
-          <p>
-            I work across search, websites, software development, and practical
-            AI tools. This page is a deliberately plain personal homepage for
-            quick reference.
-          </p>
-          <nav class="link-row" aria-label="Primary links">
-            <a href="https://github.com/genghaijian001">GitHub</a>
-            <a href="#experience">Work Experience</a>
-            <a href="#education">Education</a>
-            <a href="#academic-research">Academic Research</a>
-          </nav>
+          <h1 data-profile-heading></h1>
+          <p class="tagline" data-profile-tagline></p>
+          <p data-profile-intro></p>
+          <nav
+            class="link-row"
+            aria-label="Primary links"
+            data-profile-links
+          ></nav>
         </div>
       </header>
 
       <section>
         <h2>About Me</h2>
-        <dl class="profile-list">
-          <div>
-            <dt>Position</dt>
-            <dd>Ex SEO / Website developer</dd>
-          </div>
-          <div>
-            <dt>Location</dt>
-            <dd>Kuala Lumpur</dd>
-          </div>
-          <div>
-            <dt>Hometown</dt>
-            <dd>Shen Zhen</dd>
-          </div>
-          <div>
-            <dt>Cities Lived</dt>
-            <dd>Shen Zhen, Shang Hai, Kuala Lumpur</dd>
-          </div>
-          <div>
-            <dt>Human Languages</dt>
-            <dd>Mandarin (native), English</dd>
-          </div>
-          <div>
-            <dt>Computer Languages</dt>
-            <dd>Python, JavaScript/TypeScript, Go, Rust, Java, PHP, HTML, CSS</dd>
-          </div>
-          <div>
-            <dt>Email</dt>
-            <dd>genghaijian001[at]gmail[dot]com</dd>
-          </div>
-        </dl>
+        <dl class="profile-list" data-profile-list></dl>
       </section>
 
       <section id="experience">
         <h2>Work Experience</h2>
-        <ul class="plain-list">
-          <li>
-            <span class="date">2024-2025</span>
-            <strong>JustSimple</strong>, SEO and AI chatbot development,
-            Software Engineer.
-          </li>
-        </ul>
+        <ul class="plain-list" data-work-experience></ul>
       </section>
 
       <section id="education">
         <h2>Education</h2>
-        <ul class="plain-list">
-          <li>
-            <span class="date">2025-2026</span>
-            <strong>SEGI University</strong>, Information Technology, Master of
-            Science.
-          </li>
-          <li>
-            <span class="date">2022-2025</span>
-            <strong>SEGI University</strong>, Computer Network, Undergraduate.
-          </li>
-        </ul>
+        <ul class="plain-list" data-education></ul>
       </section>
 
-      <section id="academic-research">
+      <section id="academic-research" data-academic-research>
         <h2>Academic Research</h2>
-        <p>none</p>
+        <p></p>
       </section>
 
       <footer>
-        <p>Last updated: July 2026.</p>
+        <p data-footer-updated></p>
       </footer>
     </main>
   </body>
