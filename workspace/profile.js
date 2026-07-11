@@ -16,10 +16,8 @@ export const hero = {
 };
 
 export const links = [
-  { href: "https://github.com/genghaijian001", label: "GitHub" },
-  { href: "#experience", label: "Work Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#academic-research", label: "Academic Research" },
+  { href: "./essay/", label: "Essay" },
+  { href: "./blog/", label: "Blog" },
 ];
 
 export const profileItems = [
