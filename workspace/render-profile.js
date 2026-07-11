@@ -8,6 +8,7 @@ import {
   siteMeta,
   workExperience,
 } from "./profile.js";
+import { projects } from "./projects.js";
 
 const text = (value) => document.createTextNode(value);
 
@@ -91,6 +92,25 @@ function renderDatedList(selector, items) {
   });
 }
 
+function renderProjects() {
+  const list = document.querySelector("[data-work-projects]");
+  if (!list) return;
+
+  list.textContent = "";
+  projects.forEach((project) => {
+    const entry = document.createElement("li");
+    const name = document.createElement("strong");
+    const stack = document.createElement("span");
+
+    name.textContent = project.name;
+    stack.className = "project-stack";
+    stack.textContent = ` (${project.stack})`;
+
+    entry.append(name, stack, text(`: ${project.summary}`));
+    list.append(entry);
+  });
+}
+
 function renderAcademicResearch() {
   const section = document.querySelector("[data-academic-research]");
   if (!section) return;
@@ -111,6 +131,7 @@ setMeta();
 renderHero();
 renderProfileList();
 renderDatedList("[data-work-experience]", workExperience);
+renderProjects();
 renderDatedList("[data-education]", education);
 renderAcademicResearch();
 renderFooter();

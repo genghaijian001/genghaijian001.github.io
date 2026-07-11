@@ -3,6 +3,7 @@
 This workspace owns the page-specific content and rendering for the standalone personal homepage.
 
 - `profile.js` is the content source for hero, links, profile facts, work experience, education, academic research, and footer text.
+- `projects.js` owns the Work / Projects list shown on the homepage.
 - `render-profile.js` renders that content into `index.html`.
 - `essays.js` and `render-essays.js` own the English essay archive page.
 - `blog.js` and `render-blog.js` own the Chinese blog archive page.
