@@ -7,8 +7,8 @@ import {
   profileItems,
   siteMeta,
   workExperience,
-} from "./profile.js";
-import { projects } from "./projects.js";
+} from "./profile.js?v=remove-top-tagline";
+import { projects } from "./projects.js?v=remove-video-blog-site";
 
 const text = (value) => document.createTextNode(value);
 
@@ -41,7 +41,15 @@ function renderHero() {
     heading.append(chineseName);
   }
 
-  if (tagline) tagline.textContent = hero.tagline;
+  if (tagline) {
+    if (hero.tagline) {
+      tagline.hidden = false;
+      tagline.textContent = hero.tagline;
+    } else {
+      tagline.hidden = true;
+      tagline.textContent = "";
+    }
+  }
   if (intro) intro.textContent = hero.intro;
 
   if (nav) {

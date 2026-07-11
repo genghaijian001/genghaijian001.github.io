@@ -10,7 +10,6 @@ export const hero = {
   chineseName: "耿海剑",
   photo: "./assets/genghaijian1.png",
   photoAlt: "Geng Haijian",
-  tagline: "Ex SEO / Website developer",
   intro:
     "I work across search, websites, software development, and practical AI tools. This page is a deliberately plain personal homepage for quick reference.",
 };
