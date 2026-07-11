@@ -29,10 +29,4 @@ export const projects = [
       "Private Python research automation around single-GPU nanochat training.",
     stack: "Python",
   },
-  {
-    name: "video-blog-site",
-    summary:
-      "Next.js creator site for long-form AI writing, project showcases, and editorial workflows.",
-    stack: "Next.js",
-  },
 ];
